@@ -1,12 +1,72 @@
-# React + Vite
+🎸 Guitar Shop Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a 3-page Guitar Shop application built with React and Apollo Client, fetching data from a GraphQL API. The app allows users to browse guitar brands, explore models, and view detailed guitar specifications.
 
-Currently, two official plugins are available:
+🔗 API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All data is fetched from the provided GraphQL API:
+👉 GraphQL Endpoint
 
-## Expanding the ESLint configuration
+🎨 Design Reference
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The UI follows the provided Figma design reference.
+
+📄 Pages
+🔹 Page 1 – Guitar Brands
+
+Displays all guitar brands fetched from the API.
+
+Clicking on a brand navigates to the Guitar Models page.
+
+🔹 Page 2 – Guitar Models
+
+Displays models for the selected brand.
+
+Includes:
+
+Search bar → filter models by name.
+
+Filter dropdown → narrow down by guitar type.
+
+Pagination / Infinite Scroll (bonus).
+
+Clicking on a model navigates to the Guitar Details page.
+
+🔹 Page 3 – Guitar Details (Bonus)
+
+Shows details of a selected guitar in two tabs:
+
+Specs Tab → Displays all specifications of the guitar.
+
+Musicians Tab → Lists musicians using the guitar.
+
+Only 2 musicians shown at a time.
+
+Includes navigation dots/buttons to reveal 2 more at a time if available.
+
+⚙️ Requirements
+
+Apollo Client for GraphQL data fetching.
+
+Handle loading and error states gracefully.
+
+Styled with CSS / Tailwind / UI library for clean readability.
+
+Fully responsive design.
+
+🚀 Getting Started
+
+Clone the repository
+
+git clone https://github.com/yourusername/guitar-shop.git
+cd guitar-shop
+
+Install dependencies
+
+npm install
+
+Run the development server
+
+npm run dev
+
+Open in browser
